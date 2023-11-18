@@ -18,7 +18,7 @@ style: |
 ---
 
 # Ubuntu Monero Mining
-![bg right:40%](./img/jamesgress.png)
+![bg right:60%](./img/miningmonero.jpg)
 
 ---
 
@@ -128,6 +128,24 @@ style: |
 - **Make the Script Executable**:
   - Open terminal and navigate to the script's directory.
   - Run `chmod +x start_xmrig.sh` to make the script executable.
+
+---
+
+# Adjusting Wi-Fi Settings in Ubuntu
+
+---
+
+## Disable Wi-Fi Power Management
+
+- **Open a Terminal:** Press `Ctrl + Alt + T`
+- **Edit Config File:**
+  ```bash
+  sudo nano /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
+  ``` 
+
+  **Change Setting:** Modify wifi.powersave = 3 to wifi.powersave = 2
+  **Save and Exit:** Press Ctrl + O, Enter, and then Ctrl + X
+  **Restart Network Manager:**
 
 ---
 
